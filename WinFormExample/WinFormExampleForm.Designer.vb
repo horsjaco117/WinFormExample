@@ -24,13 +24,13 @@ Partial Class WinFormExampleForm
     Private Sub InitializeComponent()
         Me.SuspendLayout()
         '
-        'Form1
+        'WinFormExampleForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1080, 578)
-        Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.ClientSize = New System.Drawing.Size(734, 526)
+        Me.Name = "WinFormExampleForm"
+        Me.Text = "Windows Form Example"
         Me.ResumeLayout(False)
 
     End Sub
