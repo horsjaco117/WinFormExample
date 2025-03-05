@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class WinFormExampleForm
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class WinFormExampleForm
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.ExitButton = New System.Windows.Forms.Button()
         Me.UpdateButton = New System.Windows.Forms.Button()
@@ -36,6 +36,9 @@ Partial Class WinFormExampleForm
         Me.LastFirstRadioButton = New System.Windows.Forms.RadioButton()
         Me.CaseGroupBox = New System.Windows.Forms.GroupBox()
         Me.FormatGroupBox = New System.Windows.Forms.GroupBox()
+        Me.ReverseCheckBox = New System.Windows.Forms.CheckBox()
+        Me.WhiteSpaceCheckBox = New System.Windows.Forms.CheckBox()
+        Me.RandomCheckBox = New System.Windows.Forms.CheckBox()
         Me.CaseGroupBox.SuspendLayout()
         Me.FormatGroupBox.SuspendLayout()
         Me.SuspendLayout()
@@ -172,11 +175,44 @@ Partial Class WinFormExampleForm
         Me.FormatGroupBox.TabStop = False
         Me.FormatGroupBox.Text = "Format"
         '
+        'ReverseCheckBox
+        '
+        Me.ReverseCheckBox.AutoSize = True
+        Me.ReverseCheckBox.Location = New System.Drawing.Point(107, 405)
+        Me.ReverseCheckBox.Name = "ReverseCheckBox"
+        Me.ReverseCheckBox.Size = New System.Drawing.Size(94, 24)
+        Me.ReverseCheckBox.TabIndex = 17
+        Me.ReverseCheckBox.Text = "Reverse"
+        Me.ReverseCheckBox.UseVisualStyleBackColor = True
+        '
+        'WhiteSpaceCheckBox
+        '
+        Me.WhiteSpaceCheckBox.AutoSize = True
+        Me.WhiteSpaceCheckBox.Location = New System.Drawing.Point(107, 436)
+        Me.WhiteSpaceCheckBox.Name = "WhiteSpaceCheckBox"
+        Me.WhiteSpaceCheckBox.Size = New System.Drawing.Size(122, 24)
+        Me.WhiteSpaceCheckBox.TabIndex = 18
+        Me.WhiteSpaceCheckBox.Text = "WhiteSpace"
+        Me.WhiteSpaceCheckBox.UseVisualStyleBackColor = True
+        '
+        'RandomCheckBox
+        '
+        Me.RandomCheckBox.AutoSize = True
+        Me.RandomCheckBox.Location = New System.Drawing.Point(107, 467)
+        Me.RandomCheckBox.Name = "RandomCheckBox"
+        Me.RandomCheckBox.Size = New System.Drawing.Size(96, 24)
+        Me.RandomCheckBox.TabIndex = 19
+        Me.RandomCheckBox.Text = "Random"
+        Me.RandomCheckBox.UseVisualStyleBackColor = True
+        '
         'WinFormExampleForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(834, 681)
+        Me.Controls.Add(Me.RandomCheckBox)
+        Me.Controls.Add(Me.WhiteSpaceCheckBox)
+        Me.Controls.Add(Me.ReverseCheckBox)
         Me.Controls.Add(Me.FormatGroupBox)
         Me.Controls.Add(Me.CaseGroupBox)
         Me.Controls.Add(Me.AgeBox)
@@ -212,4 +248,7 @@ Partial Class WinFormExampleForm
     Friend WithEvents LastFirstRadioButton As RadioButton
     Friend WithEvents CaseGroupBox As GroupBox
     Friend WithEvents FormatGroupBox As GroupBox
+    Friend WithEvents ReverseCheckBox As CheckBox
+    Friend WithEvents WhiteSpaceCheckBox As CheckBox
+    Friend WithEvents RandomCheckBox As CheckBox
 End Class
